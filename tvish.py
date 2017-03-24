@@ -183,6 +183,9 @@ def displayResult(content):
             print(m.group(1))
             return 
     print("你有交通违法记录，请登录%s进行查询"%URL)
+    m = re.search(r"车牌号(.*)状态", content)
+  
+    print(m.group(1))
 
 if __name__ == '__main__':
 
